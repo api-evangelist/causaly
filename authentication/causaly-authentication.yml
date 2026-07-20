@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.causaly.com/products/bio-graph-api
+docs: https://www.causaly.com/products/bio-graph-api
+# No public OpenAPI is published, so this profile is captured from the Bio Graph
+# API product page, which documents access via "Simple API token, pre-made
+# templates, and R/Python libraries." The token is issued to enterprise
+# customers; there is no public self-serve auth flow or documented OAuth surface.
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: apiToken
+  type: apiKey
+  in: header
+  applies_to: Bio Graph API
+  description: Enterprise-issued API token used to authenticate Bio Graph API requests and the R/Python client libraries.
+  source: https://www.causaly.com/products/bio-graph-api
