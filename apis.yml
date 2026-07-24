@@ -1,9 +1,30 @@
 aid: causaly
 name: Causaly
-description: 'Causaly is a company surfaced as a portfolio company of iconiq-capital, index-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Causaly is an agentic AI platform for life sciences R&D, helping pharmaceutical
+  and biotech organizations accelerate drug discovery, target identification,
+  biomarker research, disease pathophysiology analysis, indication expansion,
+  competitive intelligence, and clinical evidence validation. The platform is
+  built on a high-precision biomedical knowledge graph of roughly 500 million
+  facts and 70 million directional relationships across ~5 million biomedical
+  concepts and 150+ ontology categories, paired with a Scientific Information
+  Retrieval System (SIRS) that filters hallucinations. Causaly exposes this graph
+  programmatically through its Bio Graph API (API-token access plus R/Python client
+  libraries), alongside agentic research, Bio Graph, and Pipeline Graph products.
 url: https://raw.githubusercontent.com/api-evangelist/causaly/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/66a8e5ccd2c6460e01d4d385/6718e08fb0203d34b9693190_causaly-logo-footer.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,11 +34,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Ai
-apis: []
+- Life Sciences
+- Biomedical
+- Drug Discovery
+- Knowledge Graph
+- Pharmaceutical
+- Research
+- Agentic AI
+apis:
+- name: Causaly Bio Graph API
+  description: >-
+    Computational access to Causaly's biomedical knowledge graph — 500 million
+    relationships across biomedical concepts (targets, diseases, biomarkers,
+    organ systems) with directional cause-and-effect relationship types.
+    Accessed via an enterprise-issued API token with pre-made templates and
+    R/Python client libraries. No public OpenAPI is published.
+  humanURL: https://www.causaly.com/products/bio-graph-api
+  properties:
+  - type: Authentication
+    url: authentication/causaly-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +65,30 @@ maintainers:
 common:
 - type: Website
   url: https://www.causaly.com/
+- type: Blog
+  url: https://www.causaly.com/resources/blog
+- type: GitHubOrganization
+  url: https://github.com/causaly
+- type: Support
+  url: https://www.causaly.com/contact-us
+- type: SignUp
+  url: https://www.causaly.com/request-a-demo
+- type: Login
+  url: https://med.causaly.com/
+- type: TermsOfService
+  url: https://www.causaly.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.causaly.com/legal/privacy-policy
+- type: TrustCenter
+  url: https://trust.causaly.com/
+- type: Authentication
+  url: authentication/causaly-authentication.yml
+- type: DomainSecurity
+  url: security/causaly-domain-security.yml
+- type: LLMsTxt
+  url: llms/causaly-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

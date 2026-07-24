@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+url: https://trust.causaly.com/
+platform: Vanta
+platform_slug: q4bo6ztquqtt7gsgck6o
+# The trust center is a verified, live Vanta-hosted Trust Center (HTTP 200).
+# Named certifications/documents load from Vanta's authenticated API (401 without
+# a session) and are gated behind request/NDA, so specific framework names are
+# NOT asserted here to avoid fabrication. Existence of the program is verified.
+certifications: []
+notes: Vanta Trust Center live at trust.causaly.com; document list gated behind Vanta access request.
+evidence:
+- source: https://trust.causaly.com/
+  kind: trust-center
+  detail: HTTP 200; Vanta trust-report SPA (data-slugid q4bo6ztquqtt7gsgck6o)
