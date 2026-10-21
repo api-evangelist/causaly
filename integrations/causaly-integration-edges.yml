@@ -3,6 +3,12 @@ method: searched
 checked:
 - https://azuremarketplace.microsoft.com/
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
+- https://a16z.com/portfolio/
+- https://www.battery.com/company/
+- https://www.battery.com/wp-admin/admin-ajax.php
+- https://www.indexventures.com/companies/
+- https://www.sequoiacap.com/our-companies/
+- https://www.sequoiacap.com/sitemap.xml
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -39,5 +45,32 @@ edges:
   category: Microsoft Teams app
   publisher_verified:
   - Microsoft 365 Publisher Attestation
+- partner_name: Index Ventures
+  partner: index-ventures
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.indexventures.com/companies/causaly/
+  category: vc portfolio participation
+  contract_reference:
+    register: Index Ventures companies (indexventures.com/companies/)
+    standard: null
+    spec_file: null
+    role: vc-portfolio-company
+    registered_name: Causaly
+    register_id: https://www.indexventures.com/companies/causaly/
+    register_country: europe
+    register_website: https://www.causaly.com/
+    matched_domain: causaly.com
+    matched_by: domain
+    signal_note: 'participation only: the venture firm''s own published portfolio lists the company (investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-vc-portfolios.py
+    detected: '2026-10-21'
+    sector: healthcare
+  detected_by: sweep-vc-portfolios.py
+  first_seen: '2026-10-21'
 source:
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
